@@ -32,7 +32,7 @@ class AngleQuadrature(layers.Layer):
 # for a specific index or list of indices along the given axis
 class RandomizeAngle(layers.Layer):
     def __init__(self, idxs, axis=-1, train_only=True, **kwargs):
-        super(RandomizePhi, self).__init__(**kwargs)
+        super(RandomizeAngle, self).__init__(**kwargs)
         if type(idxs) is int:
             idxs = [idxs]
         self.idxs = idxs
